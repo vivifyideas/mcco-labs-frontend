@@ -386,6 +386,9 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    @media (max-width: 480px) {
+      .ml-c-header__menu {
+        padding: 100px 20px; } }
     .ml-c-header__menu.active {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
@@ -405,6 +408,9 @@ img {
           text-decoration: none;
           color: white;
           font-size: 17px; }
+          @media (max-width: 480px) {
+            .ml-c-header__menu__content__nav a {
+              margin: 15px 25px; } }
       .ml-c-header__menu__content-trigger {
         position: absolute;
         top: 0px;
@@ -412,8 +418,8 @@ img {
         padding: 30px;
         color: white; }
         .ml-c-header__menu__content-trigger i {
-          -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
           display: inline-block;
           font-size: 30px;
           cursor: pointer; }
@@ -436,8 +442,8 @@ img {
     position: absolute;
     right: 20px;
     top: 50%;
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
     margin-top: -15px; }
     .ml-c-menu__menu-trigger i {
       font-size: 30px;
@@ -457,7 +463,12 @@ img {
     font-family: 'Leixo';
     padding-bottom: 1rem;
     letter-spacing: 3px;
-    font-size: 35px; }
+    font-size: 35px;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
+    .ml-c-about-us__title.show {
+      opacity: 1; }
   .ml-c-about-us__content {
     padding-bottom: 10rem;
     display: -webkit-box;
@@ -486,7 +497,12 @@ img {
     font-family: 'Leixo';
     padding-bottom: 1rem;
     letter-spacing: 3px;
-    font-size: 35px; }
+    font-size: 35px;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
+    .ml-c-work__title.show {
+      opacity: 1; }
   .ml-c-work__content {
     width: 66.66%;
     text-align: left;
@@ -559,7 +575,12 @@ img {
     font-family: 'Leixo';
     padding-bottom: 1rem;
     letter-spacing: 3px;
-    font-size: 35px; }
+    font-size: 35px;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
+    .ml-c-experience__title.show {
+      opacity: 1; }
   .ml-c-experience__subtitle {
     font-family: 'Leixo';
     padding-bottom: 1rem;
@@ -605,8 +626,8 @@ img {
           margin: 15px 0;
           width: 50%; } }
       .ml-c-experience__clients__client img {
-        max-height: 100px;
-        max-width: 100px;
+        max-height: 90px;
+        max-width: 90px;
         border: 1px solid white;
         border-radius: 50%; }
   .ml-c-experience-button {
@@ -633,7 +654,12 @@ img {
     font-family: 'Leixo';
     padding-bottom: 1rem;
     letter-spacing: 3px;
-    font-size: 35px; }
+    font-size: 35px;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
+    .ml-c-team__title.show {
+      opacity: 1; }
   .ml-c-team__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -714,13 +740,22 @@ img {
 
 .ml-c-contact {
   padding: 2rem 0;
-  background: white; }
+  background: white;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat; }
   .ml-c-contact__title {
     text-align: center;
     font-family: 'Leixo';
     padding-bottom: 1rem;
     letter-spacing: 3px;
-    font-size: 35px; }
+    font-size: 35px;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease; }
+    .ml-c-contact__title.show {
+      opacity: 1; }
   .ml-c-contact__content {
     max-width: 700px;
     margin: 0 auto;
@@ -740,3 +775,11 @@ img {
         align-items: center; } }
     .ml-c-contact__content__top {
       margin-bottom: 3rem; }
+
+.ml1 .letter,
+.ml2 .letter,
+.ml3 .letter,
+.ml4 .letter,
+.ml5 .letter {
+  display: inline-block;
+  line-height: 1em; }
