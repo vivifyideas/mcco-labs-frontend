@@ -5,41 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-   <header class='ml-header'>
+    <header class='ml-c-header'>
         <div class="wrapper">
-            <div class="ml-header__content">
+            <div class="ml-c-header__content">
                 <img src="./images/logo.png" alt="Mcco Labs Logo">
-                <p class="ml-header__content__title">
+                <p class="ml-c-header__content__title">
                     We help evaluate, design and structure business opportunities, 
                     investments and value creation plans across media, technology and consumer marketing businesses
                 </p>
             </div>
         </div>
+        <div class="ml-c-header__menu">
+            <div class="ml-c-header__menu__content">
+                <div class="ml-c-header__menu__content-trigger" id="closeMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <nav class="ml-c-header__menu__content__nav">
+                    <a class="nav-link" href="#about">ABOUT US</a>
+                    <a class="nav-link" href="#work">WHAT WE DO</a>
+                    <a class="nav-link" href="#experience">OUR EXPERIENCE</a>
+                    <a class="nav-link" href="#team">THE TEAM</a>
+                    <a class="nav-link" href="#contact">CONTACT US</a>
+                </nav>
+            </div>
+        </div>
     </header> 
 
-    <section class="ml-menu">
-        <img src=".images/logo.png" alt="Mcco Labs Logo">
+    <section class="ml-c-menu">
+        <img src="./images/logo-white.png" class="ml-c-menu__logo" alt="Mcco Labs Logo">
+        <div class="ml-c-menu__menu-trigger" id="toggleMenu">
+            <i class="fas fa-bars"></i>
+        </div>
     </section>
 
-    <section class="ml-about-us">
+    <section class="ml-c-about-us" id="about">
         <div class="wrapper">
-            <div class="ml-section">
-                <div class="ml-section__3-3 ml-about-us__content">
-                    <h2 class="ml-about-us__content__title">ABOUT US</h2>
-                </div>
-                <div class="ml-section__2-3">
+            <h2 class="ml-c-about-us__title">ABOUT US</h2>
+            <div class="ml-c-about-us__content">
+                <div class="ml-c-about-us__content__descripton">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! Soluta provident fugit nemo hic, nostrum illo eveniet incidunt.</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic eos autem iste, illo soluta et vitae. A suscipit, reprehenderit rem fugiat dicta rerum quod consectetur assumenda nostrum. Enim, voluptatem.</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem doloribus officiis harum consequatur sequi blanditiis fugit similique quae vel! Nihil.</p>
                 </div>
-                <div class="ml-section__1-3  ml-about-us__content">
-                    <div class=" ml-about-us__content__shape"></div>
+                <div class="ml-c-about-us__content__shape"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="ml-c-work" id="work">
+        <div class="wrapper">
+            <h2 class="ml-c-work__title">WHAT WE DO</h2>
+            <div class="ml-c-work__content">
+                <div class="ml-c-work__content__descripton">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! So Soluta provident fugit nemo hic, nostrum illo eveniet incidunt.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic eos autem iste, illo soluta et vitae. A suscipit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! So Maxime, repellat nobis! So Maxime, repellat nobis! So reprehenderit rem fugiat dicta rerum quod consectetur assumenda nostrum. Enim, voluptatem.</p>
+                </div>
+            </div>
+            <div class="ml-c-work__examples">
+                <div class="ml-c-work__examples__example">
+                    <img src="./images/one.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ducimus.</p>
+                </div>
+                <div class="ml-c-work__examples__example">
+                    <img src="./images/two.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ducimus.</p>
+                </div>
+                <div class="ml-c-work__examples__example">
+                    <img src="./images/three.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ducimus.</p>
+                </div>
+                <div class="ml-c-work__examples__example">
+                    <img src="./images/four.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ducimus.</p>
+                </div>
+            </div>
+            <a href="#" class="ml-c-work-button">
+                SCHEDULE A FREE CONSULTATION
+            </a>
+        </div>
+    </section>
+    
+    <section class="ml-c-experience" id="experience">
+        <div class="wrapper">
+            <h2 class="ml-c-experience__title">OUR EXPERIENCE</h2>
+            <div class="ml-c-experience__content">
+                <div class="ml-c-experience__content__descripton">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repel Maxime, repel. Maxime, repel nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! So Soluta provident fugit nemo hic, nostrum illo eveniet incidunt.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum hic eos autem iste, illo soluta et vitae. A suscipit, Lorem ipsum dolor sit ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! So Maxime, repellat nobis! So Maxime, repellat nobis! So reprehenderit rem fugiat dicta rerum quod consectetur assumenda nostrum. Enim, voluptatem.</p>
+                </div>
+            </div>
+            <h4 class="ml-c-experience__subtitle">OUR CLIENTS</h4>
+            <div class="ml-c-experience__clients">
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client2.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+                <div class="ml-c-experience__clients__client">
+                    <img src="./images/client1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ml-c-team" id="team">
+        <div class="wrapper">
+            <h2 class="ml-c-team__title">THE TEAM</h2>
+            <div class="ml-c-team__content">
+                <div class="ml-c-team__content__description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! So Soluta provident fugit nemo hic, nostrum illo eveniet incidunt.</p>
+                    <p>Lorem,  sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat nobis! So Maxime, repellat nobis! So Maxime, repellat nobis! So reprehenderit rem fugiat dicta rerum quod consectetur assumenda nostrum. Enim, voluptatem.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nam atque! Veniam magni dolor labore temporibus hic praesentium minus. Consequatur facilis ad, esse, optio ipsum repellendus suscipit asperiores, praesentium sed ratione similique dolore soluta enim vero quisquam eius ipsa quia quaerat error vel beatae doloremque? Minus, veniam! Animi,  ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nam atque! Veniam magni dolor labore temporibus hic praesentium minus. Consequatur facilis ad, esse, optio ipsum repellendus suscipit asperiores, praesentium sed ratione similique dolore soluta enim vero quisquam eius ipsa quia quaerat error vel beatae doloremque?  ipsum dolor sit amet consectetur adipisicing elit. Deserunt, nam atque! Veniam magni dolor labore temporibus hic praesentium minus. Consequatur facilis ad, esse, optio ipsum repellendus suscipit asperiores, praesentium sed ratione similique dolore soluta enim vero quisquam eius ipsa quia quaerat error vel beatae doloremque? Minus, veniam! Anim Minus, veniam! Anim accusantium atque.</p>
+                </div>
+                <div class="ml-c-team__content__pic">
+                    <div class="ml-c-team__content__pic__box">Black and White Pic of Mauro Cellore</div>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ml-c-contact" id="contact">
+        <div class="wrapper">
+            <h2 class="ml-c-contact__title">CONTACT</h2>
+            <div class="ml-c-contact__content">
+                <div>
+                    <div class="ml-c-contact__content__top">
+                        <p>Mauro Cellore</p>
+                        <p>Managing Partner</p>
+                    </div>
+                    <div class="ml-c-contact__content__bottom">
+                        <p>Mauro@mccolabs.com</p>
+                        <p>310.701.2117</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="ml-c-contact__content__top">
+                        <p>Media Inquiries</p>
+                        <p>Media@mcclabs.com</p>
+                    </div>
+                    <div class="ml-c-contact__content__bottom">
+                        <p>Careers</p>
+                        <p>work@mccolabs.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@ gulp.task('copy', function() {
   });
 
 gulp.task('script', function() {
-    gulp.src('app/js.*js')
+    gulp.src('app/js/script.js')
     .pipe(babel({
         presets: ['env']
     }))
@@ -46,8 +46,8 @@ gulp.task('watch', ['browserSync', 'sass', 'script', 'copy'], function() {
     gulp.watch('app/scss/*.scss', ['sass']);
     gulp.watch('app/index.html', ['copy']);
     gulp.watch('app/*.html', browserSync.reload); 
-    gulp.watch('app/js/**/*.js', browserSync.reload);
+    gulp.watch('app/js/script.js', browserSync.reload);
     gulp.watch('app/scss/*.scss', browserSync.reload);
   });
 
-gulp.task('default', ['sass', 'scripts', 'watch', 'browserSync', 'copy']);
+gulp.task('default', ['sass', 'script', 'watch', 'browserSync', 'copy']);
