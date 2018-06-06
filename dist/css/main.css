@@ -327,9 +327,9 @@ img {
   margin: 0 auto; }
 
 .ml-c-header {
-  background-image: url("../images/background.png");
   background-size: cover;
   background-position: center center;
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   height: calc(100vh - 82px);
   display: -webkit-box;
@@ -364,6 +364,9 @@ img {
       text-align: center;
       font-weight: 500;
       font-size: 19px; }
+      @media (max-width: 480px) {
+        .ml-c-header__content__title {
+          font-size: 17px; } }
   .ml-c-header__menu {
     -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
     clip-path: polygon(0 0, 100% 100%, 100% 0);
@@ -378,7 +381,7 @@ img {
     transform: translate3d(100%, -100%, 0);
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
-    background: black;
+    background: #101415;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -404,13 +407,13 @@ img {
         flex-direction: column; }
         .ml-c-header__menu__content__nav a {
           display: inline-block;
-          margin: 25px 35px;
+          padding: 25px 35px;
           text-decoration: none;
           color: white;
           font-size: 17px; }
           @media (max-width: 480px) {
             .ml-c-header__menu__content__nav a {
-              margin: 15px 25px; } }
+              padding: 15px 25px; } }
       .ml-c-header__menu__content-trigger {
         position: absolute;
         top: 0px;
@@ -452,12 +455,11 @@ img {
 .ml-c-about-us {
   padding: 2rem 0;
   background: white;
-  background-image: url("../images/o.png");
   background-position: right center;
   background-repeat: no-repeat; }
   @media (max-width: 768px) {
     .ml-c-about-us {
-      background-image: none; } }
+      background-image: none !important; } }
   .ml-c-about-us__title {
     text-align: center;
     font-family: 'Leixo';
@@ -479,7 +481,11 @@ img {
       .ml-c-about-us__content {
         width: 100%; } }
     .ml-c-about-us__content p {
-      font-size: 19px; }
+      font-size: 17px; }
+      @media (max-width: 480px) {
+        .ml-c-about-us__content p {
+          line-height: 1.6;
+          font-size: 16px; } }
     .ml-c-about-us__content__shape {
       position: absolute;
       right: 0;
@@ -489,7 +495,7 @@ img {
 
 .ml-c-work {
   padding: 2rem 0;
-  background: black;
+  background: #101415;
   color: white;
   text-align: center; }
   .ml-c-work__title {
@@ -507,6 +513,12 @@ img {
     width: 66.66%;
     text-align: left;
     margin: 20px 0; }
+    .ml-c-work__content p {
+      font-size: 17px; }
+      @media (max-width: 480px) {
+        .ml-c-work__content p {
+          line-height: 1.6;
+          font-size: 16px; } }
   .ml-c-work__examples {
     max-width: 80%;
     display: -webkit-box;
@@ -535,9 +547,14 @@ img {
         padding: 10px;
         border-radius: 50%; }
       .ml-c-work__examples__example p {
-        max-width: 150px; }
+        max-width: 150px;
+        font-size: 17px; }
+        @media (max-width: 480px) {
+          .ml-c-work__examples__example p {
+            line-height: 1.6;
+            font-size: 16px; } }
   .ml-c-work-button {
-    background: black;
+    background: #101415;
     border: 1px solid white;
     color: white;
     padding: 15px;
@@ -549,7 +566,7 @@ img {
       -webkit-transition: all .5s ease;
       transition: all .5s ease;
       background: white;
-      color: black; }
+      color: #101415; }
   @media (max-width: 920px) {
     .ml-c-work__examples {
       -ms-flex-wrap: wrap;
@@ -567,9 +584,11 @@ img {
   padding: 2rem 0;
   background: white;
   text-align: center;
-  background-image: url("../images/mc.png");
   background-position: top right;
   background-repeat: no-repeat; }
+  @media (max-width: 768px) {
+    .ml-c-experience {
+      background-image: none !important; } }
   .ml-c-experience__title {
     text-align: center;
     font-family: 'Leixo';
@@ -589,7 +608,12 @@ img {
   .ml-c-experience__content {
     width: 66.66%;
     text-align: left;
-    margin: 20px 0; }
+    margin: 20px 0;
+    font-size: 17px; }
+    @media (max-width: 480px) {
+      .ml-c-experience__content {
+        line-height: 1.6;
+        font-size: 16px; } }
     @media (max-width: 768px) {
       .ml-c-experience__content {
         width: 100%; } }
@@ -631,10 +655,10 @@ img {
         border: 1px solid white;
         border-radius: 50%; }
   .ml-c-experience-button {
-    background: black;
-    border: 1px solid white;
-    color: white;
-    padding: 10px;
+    background: white;
+    border: 1px solid #101415;
+    color: #101415;
+    padding: 15px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
@@ -642,12 +666,12 @@ img {
     .ml-c-experience-button:hover {
       -webkit-transition: all .5s ease;
       transition: all .5s ease;
-      background: white;
-      color: black; }
+      background: #101415;
+      color: white; }
 
 .ml-c-team {
   padding: 2rem 0;
-  background: black;
+  background: #101415;
   color: white; }
   .ml-c-team__title {
     text-align: center;
@@ -664,6 +688,12 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    .ml-c-team__content p {
+      font-size: 17px; }
+      @media (max-width: 480px) {
+        .ml-c-team__content p {
+          line-height: 1.6;
+          font-size: 16px; } }
     @media (max-width: 720px) {
       .ml-c-team__content {
         -webkit-box-orient: vertical;
@@ -741,8 +771,8 @@ img {
 .ml-c-contact {
   padding: 2rem 0;
   background: white;
-  background-image: url("../images/background.png");
   background-size: cover;
+  background-image: url("../images/background.png");
   background-position: left center;
   background-repeat: no-repeat; }
   .ml-c-contact__title {
@@ -764,6 +794,12 @@ img {
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around; }
+    .ml-c-contact__content p {
+      font-size: 17px; }
+      @media (max-width: 480px) {
+        .ml-c-contact__content p {
+          line-height: 1.6;
+          font-size: 16px; } }
     @media (max-width: 480px) {
       .ml-c-contact__content {
         -webkit-box-orient: vertical;

@@ -68,6 +68,7 @@ function animateTitle(x) {
     $(x).each(function () {
         $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
     });
+
     anime.timeline().add({
         targets: x + ' .letter',
         scale: [2, 1],
