@@ -307,7 +307,39 @@ template {
 
 @font-face {
   font-family: 'Crimson';
-  src: url("../fonts/crimson/Crimson-Bold.woff2") format("woff2"), url("../fonts/crimson/Crimson-BoldItalic.woff") format("woff"), url("../fonts/crimson/Crimson-Italic.woff2") format("woff2"), url("../fonts/crimson/Crimson-Roman.woff") format("woff"), url("../fonts/crimson/Crimson-Semibold.woff2") format("woff2"), url("../fonts/crimson/Crimson-SemiboldItalic.woff") format("woff"); }
+  src: url("../fonts/crimson/Crimson-Semibold.woff2") format("woff2"), url("../fonts/crimson/Crimson-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Crimson';
+  src: url("../fonts/crimson/Crimson-Bold.woff2") format("woff2"), url("../fonts/crimson/Crimson-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Crimson';
+  src: url("../fonts/crimson/Crimson-Roman.woff2") format("woff2"), url("../fonts/crimson/Crimson-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Crimson';
+  src: url("../fonts/crimson/Crimson-Italic.woff2") format("woff2"), url("../fonts/crimson/Crimson-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Crimson';
+  src: url("../fonts/crimson/Crimson-BoldItalic.woff2") format("woff2"), url("../fonts/crimson/Crimson-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Crimson';
+  src: url("../fonts/crimson/Crimson-SemiboldItalic.woff2") format("woff2"), url("../fonts/crimson/Crimson-SemiboldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic; }
 
 @font-face {
   font-family: 'Leixo';
@@ -329,7 +361,7 @@ img {
 .ml-c-header {
   background-size: cover;
   background-position: center center;
-  background-image: url("../images/background.png");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   height: calc(100vh - 82px);
   display: -webkit-box;
@@ -438,7 +470,7 @@ img {
   -ms-flex-pack: center;
   justify-content: center; }
   .ml-c-menu__logo {
-    width: 150px;
+    width: 105px;
     height: 50px; }
   .ml-c-menu__menu-trigger {
     color: white;
@@ -652,8 +684,7 @@ img {
       .ml-c-experience__clients__client img {
         max-height: 90px;
         max-width: 90px;
-        border: 1px solid white;
-        border-radius: 50%; }
+        border: 1px solid white; }
   .ml-c-experience-button {
     background: white;
     border: 1px solid #101415;
@@ -687,7 +718,8 @@ img {
   .ml-c-team__content {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding-bottom: 2rem; }
     .ml-c-team__content p {
       font-size: 17px; }
       @media (max-width: 480px) {
@@ -743,7 +775,7 @@ img {
           width: 90%; } }
       .ml-c-team__content__pic__box {
         width: 65%;
-        height: 75%;
+        height: 100%;
         background: grey;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -772,7 +804,7 @@ img {
   padding: 2rem 0;
   background: white;
   background-size: cover;
-  background-image: url("../images/background.png");
+  background-image: url("../images/background.jpg");
   background-position: left center;
   background-repeat: no-repeat; }
   .ml-c-contact__title {
