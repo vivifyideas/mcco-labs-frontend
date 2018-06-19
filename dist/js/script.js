@@ -32,12 +32,34 @@ header.addEventListener('click', function (e) {
     }
 });
 
-$('.nav-link').on('click', function (e) {
-    var elem = $(this).attr('href');
-    e.preventDefault();
-    $('body,html').animate({
-        scrollTop: $(elem).offset().top
-    }, "slow");
+var jump = function jump(e) {
+    if (e) {
+        e.preventDefault();
+        var target = $(this).attr("href");
+    } else {
+        var target = location.hash;
+    }
+
+    $('html,body').animate({
+        scrollTop: $(target).offset().top
+    }, 2000, function () {
+        location.hash = target;
+    });
+};
+
+$('html, body').hide();
+
+$(document).ready(function () {
+    $('.nav-link').bind("click", jump);
+
+    if (location.hash) {
+        setTimeout(function () {
+            $('html, body').scrollTop(0).show();
+            jump();
+        }, 500);
+    } else {
+        $('html, body').show();
+    }
 });
 
 $(window).on('scroll', function () {

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Gobold';
+    src: url('GoboldBold.woff2') format('woff2'),
+        url('GoboldBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gobold';
+    src: url('Gobold.woff2') format('woff2'),
+        url('Gobold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

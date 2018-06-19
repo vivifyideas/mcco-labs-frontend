@@ -55,8 +55,23 @@
          url('../fonts/leixo/LEIXO-DEMO.woff') format('woff'), /* Pretty Modern Browsers */
   }  
 
+  @font-face {
+    font-family: 'Gobold';
+    src: url('../fonts/gobold/Gobold.woff2') format('woff2'),
+        url('../fonts/gobold/Gobold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     font-family: 'Crimson';
+}
+
+.section-height {
+    height: 70vh;
+    @media (max-width: 920px) {
+        height: auto;
+    }
 }
 
 img {
@@ -73,7 +88,7 @@ img {
 
 .ml-c-header {
     background-size: cover;
-    background-position: center center;
+    background-position: bottom center;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     height: calc(100vh - 82px);
@@ -87,15 +102,19 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        img {
+            max-width: 480px;
+            width: 100%;
+        }
         &__title {
             margin-top: 2rem;
-            max-width: 700px;
+            max-width: 900px;
             line-height: 2rem;
             text-align: center;
-            font-weight: 500;
-            font-size: 19px;
+            font-weight: 600;
+            font-size: 28px;
             @media (max-width: 480px) {
-                font-size: 17px;
+                font-size: 20px;
             }
         }
     }
@@ -111,7 +130,7 @@ img {
         padding: 100px 50px;
         transform: translate3d(100%, -100%, 0);
         transition: all .4s ease;
-        background: #101415;
+        background: #404343;
         display: flex;
         flex-direction: column;
         @media (max-width: 480px){
@@ -160,7 +179,7 @@ img {
 .ml-c-menu {
     display: flex;
     padding: 1rem 0;   
-    background: black; 
+    background: #404343; 
     position: relative;
     justify-content: center;
     &__logo {
@@ -182,37 +201,37 @@ img {
 }
 
 .ml-c-about-us {
-    padding: 2rem 0;
+    padding: 1rem 0 2.5rem 0;
     background: white;
+    background-image: url("../images/1.png");
     background-position: right center;
     background-repeat: no-repeat;
-    @media (max-width: 768px) {
+    @media (max-width: 920px) {
         background-image: none !important;
     }
     &__title {
         text-align: center;
         font-family: 'Leixo';
-        padding-bottom: 1rem;
         letter-spacing: 3px;
-        font-size: 35px;
+        font-size: 40px;
         opacity: 0;
+        margin: 1.5rem 0;
         transition: opacity 0.2s ease;
         &.show {
             opacity: 1;
         }
     }
     &__content {
-        padding-bottom: 10rem;
         display: flex;
         width: 66.66%;
         @media (max-width: 768px){
             width: 100%;
         }
         p {
-            font-size: 17px;
+            font-size: 20px;
             @media (max-width: 480px) {
                 line-height: 1.6;
-                font-size: 16px;
+                font-size: 18px;
             }
         }
         &__shape {
@@ -227,17 +246,22 @@ img {
 }
 
 .ml-c-work {
-    padding: 2rem 0;
-    background: #101415;
+    padding: 1rem 0 2.5rem 0;
+    background: #404343;
     color: white;
-    text-align: center;
+    background-image: url("../images/2.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    @media (max-width: 920px) {
+        background-image: none !important;
+    }
     &__title {
         text-align: center;
         font-family: 'Leixo';
-        padding-bottom: 1rem;
         letter-spacing: 3px;
-        font-size: 35px;
+        font-size: 40px;
         opacity: 0;
+        margin: 1.5rem 0;
         transition: opacity 0.2s ease;
         &.show {
             opacity: 1;
@@ -247,11 +271,12 @@ img {
         width: 66.66%;
         text-align: left;
         margin: 20px 0;
+        display: flex;
         p {
-            font-size: 17px;
+            font-size: 20px;
             @media (max-width: 480px) {
                 line-height: 1.6;
-                font-size: 16px;
+                font-size: 18px;
             }
         }
     }
@@ -283,17 +308,16 @@ img {
         }
     }
     &-button {
-        background: #101415;
-        border: 1px solid white;
-        color:white;
+        background: #404343;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        color:rgba(255, 255, 255, 0.8);
         padding: 15px;
         text-decoration: none;
-        text-align: center;
         display: inline-block;
         margin-top: 20px;
         &:hover {
             transition: all .5s ease;
-            background: white;
+            background: rgba(255, 255, 255, 0.8);
             color: #101415;
         }
     }
@@ -315,21 +339,22 @@ img {
 }
 
 .ml-c-experience {
-    padding: 2rem 0;
+    padding: 1rem 0 2.5rem 0;
     background: white;
     text-align: center;
-    background-position: top right;
+    background-image: url("../images/3.png");
+    background-position: 100% 40%;
     background-repeat: no-repeat;
-    @media (max-width: 768px) {
+    @media (max-width: 920px) {
         background-image: none !important;
     }
     &__title {
         text-align: center;
         font-family: 'Leixo';
-        padding-bottom: 1rem;
         letter-spacing: 3px;
-        font-size: 35px;
+        font-size: 40px;
         opacity: 0;
+        margin: 1.5rem 0;
         transition: opacity 0.2s ease;
         &.show {
             opacity: 1;
@@ -339,23 +364,24 @@ img {
         font-family: 'Leixo';
         padding-bottom: 1rem;
         letter-spacing: 3px;
-        font-size: 22px;
+        font-size: 30px;
     }
     &__content {
         width: 66.66%;
         text-align: left;
         margin: 20px 0;
-        font-size: 17px;
+        font-size: 20px;
+        display: flex;
         @media (max-width: 480px) {
             line-height: 1.6;
-            font-size: 16px;
+            font-size: 18px;
         }
         @media (max-width: 768px){
             width: 100%;
         }
     }
     &__clients {
-        max-width: 80%;
+        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -365,7 +391,7 @@ img {
             align-items: center;
             justify-content: center;
             text-align: center;
-            width: 13.5%;
+            width: 22.5%;
             margin: 15px 10px;
             @media (max-width: 920px) {
                 margin: 15px 0;
@@ -376,8 +402,8 @@ img {
                 width: 50%;
             }
             img {
-                max-height: 90px;
-                max-width: 90px;
+                max-height: 150px;
+                max-width: 150px;
                 border: 1px solid white;
             }
         }
@@ -400,16 +426,17 @@ img {
 }
 
 .ml-c-team {
-    padding: 2rem 0;
-    background: #101415;
+    padding: 1rem 0 2.5rem 0;
+    background: #404343;
     color: white;
     &__title {
         text-align: center;
         font-family: 'Leixo';
         padding-bottom: 1rem;
         letter-spacing: 3px;
-        font-size: 35px;
+        font-size: 40px;
         opacity: 0;
+        margin: 1.5rem 0;
         transition: opacity 0.2s ease;
         &.show {
             opacity: 1;
@@ -419,10 +446,10 @@ img {
         display: flex;
         padding-bottom: 2rem;
         p {
-            font-size: 17px;
+            font-size: 20px;
             @media (max-width: 480px) {
                 line-height: 1.6;
-                font-size: 16px;
+                font-size: 18px;
             }
         }
         @media (max-width: 720px) {
@@ -432,14 +459,14 @@ img {
         &__description {
             width: 66.66%;
             @media (max-width: 920px) {
-                width: 50%;
+                width: 100%;
             }
             @media (max-width: 720px) {
                 order:2;
-                text-align: center;
+                text-align: left;
             }
             @media (max-width: 580px) {
-                width: 90%;
+                width: 100%;
             }
         }
         &__pic {
@@ -454,11 +481,12 @@ img {
             @media (max-width: 720px) {
                 order:1;
             }
-            @media (max-width: 580px) {
-                width: 90%;
+            @media (max-width: 480px) {
+                width: 80%;
             }
+
             &__box {
-                width: 65%;
+                width: 75%;
                 height: 100%;
                 background: grey;
                 display: flex;
@@ -468,10 +496,11 @@ img {
                 box-sizing: border-box;
                 padding: 10px;
                 @media (max-width: 920px) {
-                    height: 50%;
+                    height: 75%;
                 }
                 @media (max-width: 720px) {
                     height: 300px;
+                    width: 100%;
                 }
             }
         }
@@ -484,7 +513,7 @@ img {
 }
 
 .ml-c-contact {
-    padding: 2rem 0;
+    padding: 1rem 0 2.5rem 0;
     background: white;
     background-size: cover;
     background-image: url("../images/background.jpg");
@@ -493,10 +522,10 @@ img {
     &__title {
         text-align: center;
         font-family: 'Leixo';
-        padding-bottom: 1rem;
         letter-spacing: 3px;
-        font-size: 35px;
+        font-size: 40px;
         opacity: 0;
+        margin: 1.5rem 0;
         transition: opacity 0.2s ease;
         &.show {
             opacity: 1;
@@ -504,25 +533,65 @@ img {
     }
     &__content {
         max-width: 700px;
-        margin: 0 auto;
         display: flex;
-        justify-content: space-around;
-        p {
-            font-size: 17px;
-            @media (max-width: 480px) {
-                line-height: 1.6;
-                font-size: 16px;
-            }
-        }
-        @media (max-width: 480px){
-            flex-direction: column;
+        flex-direction: column;
+        padding: 0px;
+        li {
+            margin: 1rem 0;
+            display: flex;
             align-items: center;
         }
-        &__top {
-            margin-bottom: 3rem;
+        &__icon {
+            font-size: 27px;
+            padding-right: 15px;
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            span {
+                display: block;
+                margin: 8px 0;
+                font-weight: 700;
+                font-size: 20px;
+            }
         }
     }
 }
+
+.ml-c-footer {
+    padding: 2rem 0;
+    background: #404343;
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        @media (max-width: 560px) {
+            flex-direction: column;
+        }
+        h1 {
+            margin: 0;
+            font-size: 22px;
+            color:white;
+            font-weight: 100;
+            margin-top: 10px;
+        }
+        img {
+            position: absolute;
+            left:0;
+
+            @media (max-width: 560px) {
+                position: relative;
+                margin-bottom: 15px;
+            }
+        }
+        @media (max-width: 960px) {
+            justify-content: space-around;
+        }
+    }
+}
+
 
 .ml1 .letter,
 .ml2 .letter,
