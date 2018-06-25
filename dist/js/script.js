@@ -1,9 +1,6 @@
 'use strict';
 
-var btnToggleMenu = document.getElementById('toggleMenu');
-var menu = document.querySelector('.ml-c-header__menu');
-var btnCloseMenu = document.getElementById('closeMenu');
-var header = document.querySelector('.ml-c-header');
+var menuBar = $('.ml-c-menu');
 var aboutTitle = $('.ml1');
 var whatWeDo = $('.ml2');
 var experience = $('.ml3');
@@ -15,23 +12,6 @@ var ml3 = true;
 var ml4 = true;
 var ml5 = true;
 
-btnToggleMenu.addEventListener('click', function () {
-    $('body,html').animate({
-        scrollTop: 0
-    }, "slow");
-    menu.classList.toggle('active');
-});
-
-btnCloseMenu.addEventListener('click', function () {
-    menu.classList.remove('active');
-});
-
-header.addEventListener('click', function (e) {
-    if (e.target.className !== 'ml-c-header__menu active') {
-        menu.classList.remove('active');
-    }
-});
-
 var jump = function jump(e) {
     if (e) {
         e.preventDefault();
@@ -41,17 +21,17 @@ var jump = function jump(e) {
     }
 
     $('html,body').animate({
-        scrollTop: $(target).offset().top
-    }, 2000, function () {
-        location.hash = target;
-    });
+        scrollTop: ($(target).offset().top - 82).toFixed(0)
+    }, 2000);
 };
 
 $('html, body').hide();
 
 $(document).ready(function () {
     $('.nav-link').bind("click", jump);
-
+    $('.nav-link').on('click', function () {
+        menu.classList.remove('active');
+    });
     if (location.hash) {
         setTimeout(function () {
             $('html, body').scrollTop(0).show();

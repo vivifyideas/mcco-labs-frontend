@@ -1,7 +1,4 @@
-let btnToggleMenu = document.getElementById('toggleMenu');
-let menu = document.querySelector('.ml-c-header__menu');
-let btnCloseMenu = document.getElementById('closeMenu');
-let header = document.querySelector('.ml-c-header');
+let menuBar = $('.ml-c-menu');
 let aboutTitle = $('.ml1');
 let whatWeDo = $('.ml2');
 let experience = $('.ml3');
@@ -12,23 +9,6 @@ let ml2 = true;
 let ml3 = true;
 let ml4 = true;
 let ml5 = true;
-
-btnToggleMenu.addEventListener('click', function () {
-    $('body,html').animate({
-        scrollTop: 0
-    }, "slow");
-    menu.classList.toggle('active');
-});
-
-btnCloseMenu.addEventListener('click', function () {
-    menu.classList.remove('active');
-});
-
-header.addEventListener('click', function (e) {
-    if (e.target.className !== 'ml-c-header__menu active') {
-        menu.classList.remove('active');
-    }
-});
 
 var jump=function(e)
 {
@@ -41,12 +21,9 @@ var jump=function(e)
 
    $('html,body').animate(
    {
-       scrollTop: $(target).offset().top
-   },2000,function()
-   {
-       location.hash = target;
-   });
-
+       scrollTop: ($(target).offset().top - 82).toFixed(0)
+   },2000);
+   
 }
 
 $('html, body').hide();
@@ -54,7 +31,9 @@ $('html, body').hide();
 $(document).ready(function()
 {
     $('.nav-link').bind("click", jump);
-
+    $('.nav-link').on('click', () => {
+        menu.classList.remove('active');
+    });
     if (location.hash){
         setTimeout(function(){
             $('html, body').scrollTop(0).show();
@@ -64,6 +43,8 @@ $(document).ready(function()
         $('html, body').show();
     }
 });
+
+
 
 $(window).on('scroll', function() {
     if ($(window).scrollTop() >= (aboutTitle.offset().top - $(window).height() / 1.5) && ml1) {

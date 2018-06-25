@@ -364,30 +364,10 @@ img {
   width: 90%;
   margin: 0 auto; }
 
-.ml-c-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem 0;
-  background: white;
-  position: relative;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-  .ml-c-menu__logo {
-    width: 105px;
-    height: 50px; }
-  .ml-c-menu__menu-trigger {
-    color: black;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    margin-top: -15px; }
-    .ml-c-menu__menu-trigger i {
-      font-size: 30px;
-      cursor: pointer; }
+.sticky-studies {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0; }
 
 .ml-c-cs-desc {
   padding: 2rem 0;
@@ -417,7 +397,7 @@ img {
         width: 100%; } }
     .ml-c-cs-desc__content p {
       max-width: 550px;
-      font-size: 17px; }
+      font-size: 20px; }
       @media (max-width: 480px) {
         .ml-c-cs-desc__content p {
           line-height: 1.6;
@@ -426,10 +406,10 @@ img {
 .ml-c-case-studies {
   padding: 3rem 0;
   color: #151A1B; }
-  .ml-c-case-studies:nth-child(odd) {
+  .ml-c-case-studies:nth-child(even) {
     background: #151A1B;
     color: white; }
-  .ml-c-case-studies:nth-child(even) {
+  .ml-c-case-studies:nth-child(odd) {
     background: white; }
   .ml-c-case-studies__content {
     display: -webkit-box;
@@ -489,7 +469,8 @@ img {
         width: 70%; }
         @media (max-width: 768px) {
           .ml-c-case-studies__content__top__left {
-            width: 100%; } }
+            width: 100%;
+            margin-bottom: 30px; } }
         .ml-c-case-studies__content__top__left__text {
           font-size: 20px; }
         .ml-c-case-studies__content__top__left__title {
@@ -552,7 +533,8 @@ img {
   -ms-flex-align: start;
   align-items: flex-start;
   -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 80%; }
   @media (max-width: 920px) {
     .ml-c-contact-info__content {
       -webkit-box-orient: vertical;
@@ -564,7 +546,8 @@ img {
       justify-content: center;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; } }
+      align-items: center;
+      width: 100%; } }
   .ml-c-contact-info__content__section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -579,12 +562,19 @@ img {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    width: 80%;
     margin: 1.5rem 0; }
+    @media (max-width: 920px) {
+      .ml-c-contact-info__content__section {
+        width: auto; } }
     .ml-c-contact-info__content__section h2 {
       font-size: 17px;
       text-align: left;
       text-decoration: underline;
       margin-bottom: 25px; }
+      @media (max-width: 920px) {
+        .ml-c-contact-info__content__section h2 {
+          text-align: center; } }
     .ml-c-contact-info__content__section__top {
       margin: 1rem 0; }
     .ml-c-contact-info__content__section:nth-child(1) {
@@ -601,6 +591,11 @@ img {
       display: flex;
       -ms-flex-pack: distribute;
       justify-content: space-around; }
+      @media (max-width: 920px) {
+        .ml-c-contact-info__content__section__content-r {
+          -webkit-box-align: start;
+          -ms-flex-align: start;
+          align-items: flex-start; } }
       .ml-c-contact-info__content__section__content-r p {
         font-size: 15px;
         margin: 0px 10px 0px 0px; }
@@ -608,6 +603,8 @@ img {
           .ml-c-contact-info__content__section__content-r p {
             line-height: 1.6;
             font-size: 16px; } }
+      .ml-c-contact-info__content__section__content-r > div {
+        margin-right: 10px; }
       @media (max-width: 480px) {
         .ml-c-contact-info__content__section__content-r {
           -webkit-box-orient: vertical;
@@ -623,17 +620,20 @@ img {
       list-style: none;
       margin-top: 0px;
       padding: 0px; }
+      .ml-c-contact-info__content__section__content-l h2 {
+        margin-bottom: 15px; }
       .ml-c-contact-info__content__section__content-l li {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
         padding: 0px;
         font-size: 15px; }
         .ml-c-contact-info__content__section__content-l li a {
           text-decoration: none;
           color: #151A1B; }
+  .ml-c-contact-info__content__top {
+    margin-bottom: 10px; }
 
 footer {
-  text-align: center;
-  padding: 0rem 0rem 1rem 0rem; }
+  text-align: center; }
   footer p {
     font-size: 15px; }
 
