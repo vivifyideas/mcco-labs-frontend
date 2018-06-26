@@ -351,6 +351,18 @@ template {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
 body {
   font-family: 'Crimson'; }
 
@@ -376,7 +388,7 @@ img {
   .ml-c-cs-desc__title {
     font-family: 'Leixo';
     padding-bottom: 1rem;
-    letter-spacing: 3px;
+    letter-spacing: 7.12px;
     font-size: 40px;
     -webkit-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease; }
@@ -397,7 +409,8 @@ img {
         width: 100%; } }
     .ml-c-cs-desc__content p {
       max-width: 550px;
-      font-size: 20px; }
+      font-size: 20px;
+      letter-spacing: 0.26px; }
       @media (max-width: 480px) {
         .ml-c-cs-desc__content p {
           line-height: 1.6;
@@ -405,7 +418,7 @@ img {
 
 .ml-c-case-studies {
   padding: 3rem 0;
-  color: #151A1B; }
+  color: #000000; }
   .ml-c-case-studies:nth-child(even) {
     background: #151A1B;
     color: white; }
@@ -434,13 +447,14 @@ img {
           -ms-flex-direction: column;
           flex-direction: column; } }
       .ml-c-case-studies__content__title__number {
+        letter-spacing: 7.12px;
         font-size: 70px;
         font-weight: 600;
-        padding-right: 10px;
+        padding-right: 30px;
         font-family: 'Gobold'; }
       .ml-c-case-studies__content__title__text {
         font-size: 30px;
-        max-width: 800px;
+        max-width: 600px;
         font-family: 'Gobold';
         font-weight: 600;
         line-height: 1.3; }
@@ -568,10 +582,12 @@ img {
       .ml-c-contact-info__content__section {
         width: auto; } }
     .ml-c-contact-info__content__section h2 {
-      font-size: 17px;
+      font-size: 15px;
       text-align: left;
       text-decoration: underline;
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      font-family: 'Roboto';
+      font-weight: 'bold'; }
       @media (max-width: 920px) {
         .ml-c-contact-info__content__section h2 {
           text-align: center; } }
@@ -597,8 +613,9 @@ img {
           -ms-flex-align: start;
           align-items: flex-start; } }
       .ml-c-contact-info__content__section__content-r p {
-        font-size: 15px;
-        margin: 0px 10px 0px 0px; }
+        font-size: 12px;
+        margin: 0px 10px 0px 0px;
+        font-family: 'Roboto'; }
         @media (max-width: 480px) {
           .ml-c-contact-info__content__section__content-r p {
             line-height: 1.6;
@@ -625,10 +642,11 @@ img {
       .ml-c-contact-info__content__section__content-l li {
         margin-bottom: 6px;
         padding: 0px;
-        font-size: 15px; }
+        font-size: 14px; }
         .ml-c-contact-info__content__section__content-l li a {
           text-decoration: none;
-          color: #151A1B; }
+          color: #151A1B;
+          font-family: 'Roboto'; }
   .ml-c-contact-info__content__top {
     margin-bottom: 10px; }
 

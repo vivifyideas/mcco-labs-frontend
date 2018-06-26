@@ -351,6 +351,18 @@ template {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
 body {
   font-family: 'Crimson';
   overflow-x: hidden;
@@ -406,7 +418,6 @@ img {
     .ml-c-header__content__title {
       margin-top: 2rem;
       max-width: 900px;
-      line-height: 2rem;
       text-align: center;
       font-weight: 600;
       font-size: 28px; }
@@ -524,7 +535,7 @@ img {
   .ml-c-about-us__title {
     text-align: center;
     font-family: 'Leixo';
-    letter-spacing: 3px;
+    letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
     margin: 1.5rem 0;
@@ -573,7 +584,7 @@ img {
   .ml-c-work__title {
     text-align: center;
     font-family: 'Leixo';
-    letter-spacing: 3px;
+    letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
     margin: 1.5rem 0;
@@ -673,7 +684,7 @@ img {
   .ml-c-experience__title {
     text-align: center;
     font-family: 'Leixo';
-    letter-spacing: 3px;
+    letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
     margin: 1.5rem 0;
@@ -690,7 +701,7 @@ img {
   .ml-c-experience__subtitle {
     font-family: 'Leixo';
     padding-bottom: 1rem;
-    letter-spacing: 3px;
+    letter-spacing: 7.12px;
     font-size: 30px;
     margin-top: 8rem; }
     @media (max-width: 920px) {
@@ -777,7 +788,7 @@ img {
     text-align: center;
     font-family: 'Leixo';
     padding-bottom: 1rem;
-    letter-spacing: 3px;
+    letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
     margin: 1.5rem 0;
@@ -887,7 +898,7 @@ img {
   .ml-c-contact__title {
     text-align: center;
     font-family: 'Leixo';
-    letter-spacing: 3px;
+    letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
     margin: 1.5rem 0;
@@ -910,7 +921,8 @@ img {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0px; }
+    padding: 0px;
+    margin: 4rem 0; }
     .ml-c-contact__content li {
       margin: 1rem 0;
       display: -webkit-box;
@@ -939,8 +951,8 @@ img {
       .ml-c-contact__content__text span {
         display: block;
         margin: 8px 0;
-        font-weight: 700;
-        font-size: 20px; }
+        font-weight: 600;
+        font-size: 22px; }
 
 .ml-c-footer {
   padding: 2rem 0;

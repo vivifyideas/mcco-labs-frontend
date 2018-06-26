@@ -63,6 +63,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Thin.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     font-family: 'Crimson';
 }
@@ -91,7 +107,7 @@ img {
     &__title{
         font-family: 'Leixo';
         padding-bottom: 1rem;
-        letter-spacing: 3px;
+        letter-spacing: 7.12px;
         font-size: 40px;
         transition: opacity 0.2s ease;
         &.show {
@@ -109,6 +125,7 @@ img {
         p {
             max-width: 550px;
             font-size: 20px;
+            letter-spacing: 0.26px;
             @media (max-width: 480px) {
                 line-height: 1.6;
                 font-size: 16px;
@@ -119,7 +136,7 @@ img {
 
 .ml-c-case-studies{
     padding: 3rem 0;
-    color: #151A1B;
+    color: #000000;
     &:nth-child(even) {
         background: #151A1B;
         color:white;
@@ -138,14 +155,15 @@ img {
                 flex-direction: column;
             }
             &__number {
+                letter-spacing: 7.12px;
                 font-size: 70px;
                 font-weight: 600;
-                padding-right: 10px;
+                padding-right: 30px;
                 font-family: 'Gobold';
             }
             &__text {
                 font-size: 30px;
-                max-width: 800px;
+                max-width: 600px;
                 font-family: 'Gobold';
                 font-weight: 600;
                 line-height: 1.3;
@@ -249,10 +267,12 @@ img {
                 width: auto;
             }
             h2 {
-                font-size: 17px;
+                font-size: 15px;
                 text-align: left;
                 text-decoration: underline;
                 margin-bottom: 25px;
+                font-family: 'Roboto';
+                font-weight: 'bold';
                 @media (max-width: 920px) {
                     text-align: center;
                 }
@@ -276,8 +296,9 @@ img {
                     align-items: flex-start;
                 }
                 p {
-                    font-size: 15px;
+                    font-size: 12px;
                     margin: 0px 10px 0px 0px;
+                    font-family: 'Roboto';
                     @media (max-width: 480px) {
                         line-height: 1.6;
                         font-size: 16px;
@@ -305,10 +326,11 @@ img {
                 li {
                     margin-bottom: 6px;
                     padding: 0px;
-                    font-size: 15px;
+                    font-size: 14px;
                     a {
                         text-decoration: none;
                         color: #151A1B;
+                        font-family: 'Roboto';
                     }
                 }
             }

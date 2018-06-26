@@ -63,6 +63,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Thin.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     font-family: 'Crimson';
     overflow-x: hidden;
@@ -108,7 +124,6 @@ img {
         &__title {
             margin-top: 2rem;
             max-width: 900px;
-            line-height: 2rem;
             text-align: center;
             font-weight: 600;
             font-size: 28px;
@@ -228,7 +243,7 @@ img {
     &__title {
         text-align: center;
         font-family: 'Leixo';
-        letter-spacing: 3px;
+        letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
         margin: 1.5rem 0;
@@ -279,9 +294,10 @@ img {
         background-image: none !important;
     }
     &__title {
+
         text-align: center;
         font-family: 'Leixo';
-        letter-spacing: 3px;
+        letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
         margin: 1.5rem 0;
@@ -378,9 +394,10 @@ img {
         background-image: none !important;
     }
     &__title {
+
         text-align: center;
         font-family: 'Leixo';
-        letter-spacing: 3px;
+        letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
         margin: 1.5rem 0;
@@ -398,7 +415,7 @@ img {
     &__subtitle {
         font-family: 'Leixo';
         padding-bottom: 1rem;
-        letter-spacing: 3px;
+        letter-spacing: 7.12px;
         font-size: 30px;
         margin-top: 8rem;
         @media (max-width: 920px) {
@@ -476,10 +493,11 @@ img {
     min-height: 100vh;
     color: white;
     &__title {
+
         text-align: center;
         font-family: 'Leixo';
         padding-bottom: 1rem;
-        letter-spacing: 3px;
+        letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
         margin: 1.5rem 0;
@@ -572,9 +590,10 @@ img {
     background-position: left center;
     background-repeat: no-repeat;
     &__title {
+
         text-align: center;
         font-family: 'Leixo';
-        letter-spacing: 3px;
+        letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
         margin: 1.5rem 0;
@@ -594,6 +613,7 @@ img {
         display: flex;
         flex-direction: column;
         padding: 0px;
+        margin: 4rem 0;
         li {
             margin: 1rem 0;
             display: flex;
@@ -615,8 +635,8 @@ img {
             span {
                 display: block;
                 margin: 8px 0;
-                font-weight: 700;
-                font-size: 20px;
+                font-weight: 600;
+                font-size: 22px;
             }
         }
     }
@@ -654,7 +674,6 @@ img {
         }
     }
 }
-
 
 .ml1 .letter,
 .ml2 .letter,
