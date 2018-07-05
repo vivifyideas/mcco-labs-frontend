@@ -363,6 +363,24 @@ template {
   font-weight: bold;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/montserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Taviraj';
+  src: url("../fonts/taviraj/Taviraj-Light.woff2") format("woff2"), url("../fonts/taviraj/Taviraj-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url("../fonts/josefinSans/JosefinSans-Light.woff2") format("woff2"), url("../fonts/josefinSans/JosefinSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
 body {
   font-family: 'Crimson';
   overflow-x: hidden;
@@ -420,7 +438,8 @@ img {
       max-width: 900px;
       text-align: center;
       font-weight: 600;
-      font-size: 28px; }
+      font-size: 18px;
+      font-family: 'Taviraj'; }
       @media (max-width: 480px) {
         .ml-c-header__content__title {
           font-size: 20px; } }
@@ -438,7 +457,7 @@ img {
     transform: translate3d(100%, 0%, 0);
     -webkit-transition: all .4s ease;
     transition: all .4s ease;
-    background: #404343;
+    background: #000000;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -493,7 +512,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem 0;
-  background: #404343;
+  background: #000000;
   position: relative;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -533,8 +552,8 @@ img {
     .ml-c-about-us {
       background-image: none !important; } }
   .ml-c-about-us__title {
+    font-family: 'Montserrat';
     text-align: center;
-    font-family: 'Leixo';
     letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
@@ -553,16 +572,17 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 66.66%; }
+    width: 58%; }
     @media (max-width: 768px) {
       .ml-c-about-us__content {
         width: 100%; } }
     .ml-c-about-us__content p {
-      font-size: 20px; }
+      font-size: 18px;
+      font-family: 'Taviraj'; }
       @media (max-width: 480px) {
         .ml-c-about-us__content p {
           line-height: 1.6;
-          font-size: 18px; } }
+          font-size: 16px; } }
     .ml-c-about-us__content__shape {
       position: absolute;
       right: 0;
@@ -572,7 +592,7 @@ img {
 
 .ml-c-work {
   padding: 1rem 0 2.5rem 0;
-  background: #404343;
+  background: #000000;
   color: white;
   background-image: url("../images/2.png");
   background-position: top right;
@@ -582,8 +602,8 @@ img {
     .ml-c-work {
       background-image: none !important; } }
   .ml-c-work__title {
+    font-family: 'Montserrat';
     text-align: center;
-    font-family: 'Leixo';
     letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
@@ -599,18 +619,22 @@ img {
     .ml-c-work__title.show {
       opacity: 1; }
   .ml-c-work__content {
-    width: 66.66%;
+    width: 58%;
     text-align: left;
     margin: 20px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
     .ml-c-work__content p {
-      font-size: 20px; }
+      font-size: 18px;
+      font-family: 'Taviraj'; }
       @media (max-width: 480px) {
         .ml-c-work__content p {
           line-height: 1.6;
-          font-size: 18px; } }
+          font-size: 16px; } }
+    .ml-c-work__content h3 {
+      font-family: 'Josefin Sans';
+      font-weight: 100; }
   .ml-c-work__examples {
     max-width: 80%;
     display: -webkit-box;
@@ -640,24 +664,26 @@ img {
         border-radius: 50%; }
       .ml-c-work__examples__example p {
         max-width: 150px;
-        font-size: 17px; }
+        font-size: 18px;
+        font-family: 'Taviraj'; }
         @media (max-width: 480px) {
           .ml-c-work__examples__example p {
             line-height: 1.6;
             font-size: 16px; } }
   .ml-c-work-button {
-    background: #404343;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: #000000;
+    border: 3px solid rgba(255, 255, 255, 0.8);
     color: rgba(255, 255, 255, 0.8);
     padding: 15px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-family: 'Taviraj'; }
     .ml-c-work-button:hover {
       -webkit-transition: all .5s ease;
       transition: all .5s ease;
-      background: rgba(255, 255, 255, 0.8);
-      color: #404343; }
+      background: white;
+      color: #000000; }
   @media (max-width: 920px) {
     .ml-c-work__examples {
       -ms-flex-wrap: wrap;
@@ -682,8 +708,8 @@ img {
     .ml-c-experience {
       background-image: none !important; } }
   .ml-c-experience__title {
+    font-family: 'Montserrat';
     text-align: center;
-    font-family: 'Leixo';
     letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
@@ -699,11 +725,11 @@ img {
     .ml-c-experience__title.show {
       opacity: 1; }
   .ml-c-experience__subtitle {
-    font-family: 'Leixo';
     padding-bottom: 1rem;
     letter-spacing: 7.12px;
     font-size: 30px;
-    margin-top: 8rem; }
+    margin-top: 8rem;
+    font-family: 'Montserrat'; }
     @media (max-width: 920px) {
       .ml-c-experience__subtitle {
         margin-top: 6rem; } }
@@ -711,13 +737,16 @@ img {
       .ml-c-experience__subtitle {
         margin-top: 3rem; } }
   .ml-c-experience__content {
-    width: 66.66%;
+    width: 58%;
     text-align: left;
     margin: 20px 0;
     font-size: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    .ml-c-experience__content p {
+      font-size: 18px;
+      font-family: 'Taviraj'; }
     @media (max-width: 480px) {
       .ml-c-experience__content {
         line-height: 1.6;
@@ -766,27 +795,28 @@ img {
         border: 1px solid white; }
   .ml-c-experience-button {
     background: white;
-    border: 1px solid #404343;
+    border: 3px solid #000000;
     color: #101415;
     padding: 15px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-family: 'Taviraj'; }
     .ml-c-experience-button:hover {
       -webkit-transition: all .5s ease;
       transition: all .5s ease;
-      background: #404343;
+      background: #000000;
       color: white; }
 
 .ml-c-team {
   padding: 1rem 0 2.5rem 0;
-  background: #404343;
+  background: #000000;
   min-height: 100vh;
   color: white; }
   .ml-c-team__title {
+    font-family: 'Montserrat';
     text-align: center;
-    font-family: 'Leixo';
     padding-bottom: 1rem;
     letter-spacing: 7.12px;
     font-size: 40px;
@@ -808,11 +838,12 @@ img {
     display: flex;
     padding-bottom: 2rem; }
     .ml-c-team__content p {
-      font-size: 20px; }
+      font-size: 18px;
+      font-family: 'Taviraj'; }
       @media (max-width: 480px) {
         .ml-c-team__content p {
           line-height: 1.6;
-          font-size: 18px; } }
+          font-size: 16px; } }
     @media (max-width: 720px) {
       .ml-c-team__content {
         -webkit-box-orient: vertical;
@@ -823,7 +854,7 @@ img {
         -ms-flex-align: center;
         align-items: center; } }
     .ml-c-team__content__description {
-      width: 66.66%; }
+      width: 58%; }
       @media (max-width: 920px) {
         .ml-c-team__content__description {
           width: 100%; } }
@@ -896,8 +927,8 @@ img {
   background-position: left center;
   background-repeat: no-repeat; }
   .ml-c-contact__title {
+    font-family: 'Montserrat';
     text-align: center;
-    font-family: 'Leixo';
     letter-spacing: 7.12px;
     font-size: 40px;
     opacity: 0;
@@ -934,7 +965,7 @@ img {
     .ml-c-contact__content__icon img {
       width: 45px;
       height: 35px;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       font-size: 27px;
       padding-right: 15px; }
     .ml-c-contact__content__text {
@@ -949,14 +980,15 @@ img {
       -ms-flex-pack: center;
       justify-content: center; }
       .ml-c-contact__content__text span {
+        font-size: 18px;
+        font-family: 'Taviraj';
         display: block;
         margin: 8px 0;
-        font-weight: 600;
-        font-size: 22px; }
+        font-weight: 600; }
 
 .ml-c-footer {
   padding: 2rem 0;
-  background: #404343; }
+  background: #000000; }
   .ml-c-footer__content {
     display: -webkit-box;
     display: -ms-flexbox;

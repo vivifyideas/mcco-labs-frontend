@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Taviraj';
+    src: url('Taviraj-Light.woff2') format('woff2'),
+        url('Taviraj-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

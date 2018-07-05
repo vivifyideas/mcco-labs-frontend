@@ -383,7 +383,7 @@ img {
 
 .ml-c-cs-desc {
   padding: 2rem 0;
-  background: #151A1B;
+  background: #000000;
   color: white; }
   .ml-c-cs-desc__title {
     font-family: 'Leixo';
@@ -420,10 +420,11 @@ img {
   padding: 3rem 0;
   color: #000000; }
   .ml-c-case-studies:nth-child(even) {
-    background: #151A1B;
+    background: #000000;
     color: white; }
   .ml-c-case-studies:nth-child(odd) {
-    background: white; }
+    background: white;
+    color: #000000; }
   .ml-c-case-studies__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -447,7 +448,7 @@ img {
           -ms-flex-direction: column;
           flex-direction: column; } }
       .ml-c-case-studies__content__title__number {
-        letter-spacing: 7.12px;
+        letter-spacing: 12.46px;
         font-size: 70px;
         font-weight: 600;
         padding-right: 30px;
@@ -613,7 +614,7 @@ img {
           -ms-flex-align: start;
           align-items: flex-start; } }
       .ml-c-contact-info__content__section__content-r p {
-        font-size: 12px;
+        font-size: 15px;
         margin: 0px 10px 0px 0px;
         font-family: 'Roboto'; }
         @media (max-width: 480px) {
@@ -644,8 +645,9 @@ img {
         padding: 0px;
         font-size: 14px; }
         .ml-c-contact-info__content__section__content-l li a {
+          font-size: 15px;
           text-decoration: none;
-          color: #151A1B;
+          color: #000000;
           font-family: 'Roboto'; }
   .ml-c-contact-info__content__top {
     margin-bottom: 10px; }

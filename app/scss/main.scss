@@ -79,6 +79,32 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Taviraj';
+    src: url('../fonts/taviraj/Taviraj-Light.woff2') format('woff2'),
+        url('../fonts/taviraj/Taviraj-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('../fonts/josefinSans/JosefinSans-Light.woff2') format('woff2'),
+        url('../fonts/josefinSans/JosefinSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
 body {
     font-family: 'Crimson';
     overflow-x: hidden;
@@ -126,7 +152,8 @@ img {
             max-width: 900px;
             text-align: center;
             font-weight: 600;
-            font-size: 28px;
+            font-size: 18px;
+            font-family: 'Taviraj'; 
             @media (max-width: 480px) {
                 font-size: 20px;
             }
@@ -144,7 +171,7 @@ img {
         padding: 70px 50px;
         transform: translate3d(100%, 0%, 0);
         transition: all .4s ease;
-        background: #404343;
+        background: #000000;
         display: flex;
         flex-direction: column;
         @media (max-width: 480px){
@@ -197,7 +224,7 @@ img {
 .ml-c-menu {
     display: flex;
     padding: 1rem 0;   
-    background: #404343; 
+    background: #000000; 
     position: relative;
     justify-content: center;
     &--white {
@@ -241,8 +268,8 @@ img {
         background-image: none !important;
     }
     &__title {
+        font-family: 'Montserrat';
         text-align: center;
-        font-family: 'Leixo';
         letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
@@ -260,15 +287,16 @@ img {
     }
     &__content {
         display: flex;
-        width: 66.66%;
+        width: 58%;
         @media (max-width: 768px){
             width: 100%;
         }
         p {
-            font-size: 20px;
+            font-size: 18px;
+            font-family: 'Taviraj';
             @media (max-width: 480px) {
                 line-height: 1.6;
-                font-size: 18px;
+                font-size: 16px;
             }
         }
         &__shape {
@@ -284,7 +312,7 @@ img {
 
 .ml-c-work {
     padding: 1rem 0 2.5rem 0;
-    background: #404343;
+    background: #000000;
     color: white;
     background-image: url("../images/2.png");
     background-position: top right;
@@ -294,9 +322,9 @@ img {
         background-image: none !important;
     }
     &__title {
+        font-family: 'Montserrat';
 
         text-align: center;
-        font-family: 'Leixo';
         letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
@@ -313,16 +341,21 @@ img {
         }
     }
     &__content {
-        width: 66.66%;
+        width: 58%;
         text-align: left;
         margin: 20px 0;
         display: flex;
         p {
-            font-size: 20px;
+            font-size: 18px;
+            font-family: 'Taviraj';
             @media (max-width: 480px) {
                 line-height: 1.6;
-                font-size: 18px;
+                font-size: 16px;
             }
+        }
+        h3 {
+            font-family: 'Josefin Sans';
+            font-weight: 100;
         }
     }
     &__examples {
@@ -344,7 +377,8 @@ img {
             }
             p {
                 max-width: 150px;
-                font-size: 17px;
+                font-size: 18px;
+                font-family: 'Taviraj';
                 @media (max-width: 480px) {
                     line-height: 1.6;
                     font-size: 16px;
@@ -353,17 +387,18 @@ img {
         }
     }
     &-button {
-        background: #404343;
-        border: 1px solid rgba(255, 255, 255, 0.8);
+        background: #000000;
+        border: 3px solid rgba(255, 255, 255, 0.8);
         color:rgba(255, 255, 255, 0.8);
         padding: 15px;
         text-decoration: none;
         display: inline-block;
         margin-top: 20px;
+        font-family: 'Taviraj';
         &:hover {
             transition: all .5s ease;
-            background: rgba(255, 255, 255, 0.8);
-            color: #404343;
+            background: rgba(255, 255, 255, 1);
+            color: #000000;
         }
     }
     @media (max-width: 920px) {
@@ -394,9 +429,8 @@ img {
         background-image: none !important;
     }
     &__title {
-
+        font-family: 'Montserrat';
         text-align: center;
-        font-family: 'Leixo';
         letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
@@ -413,11 +447,11 @@ img {
         }
     }
     &__subtitle {
-        font-family: 'Leixo';
         padding-bottom: 1rem;
         letter-spacing: 7.12px;
         font-size: 30px;
         margin-top: 8rem;
+        font-family: 'Montserrat';
         @media (max-width: 920px) {
             margin-top: 6rem;
         }
@@ -426,11 +460,15 @@ img {
         }
     }
     &__content {
-        width: 66.66%;
+        width: 58%;
         text-align: left;
         margin: 20px 0;
         font-size: 20px;
         display: flex;
+        p {
+            font-size: 18px;
+            font-family: 'Taviraj'; 
+        }
         @media (max-width: 480px) {
             line-height: 1.6;
             font-size: 18px;
@@ -472,16 +510,17 @@ img {
     }
     &-button {
         background: white;
-        border: 1px solid #404343;
+        border: 3px solid #000000;
         color:#101415;
         padding: 15px;
         text-decoration: none;
         text-align: center;
         display: inline-block;
         margin-top: 20px;
+        font-family: 'Taviraj';
         &:hover {
             transition: all .5s ease;
-            background: #404343;
+            background: #000000;
             color: white;
         }
     }
@@ -489,13 +528,12 @@ img {
 
 .ml-c-team {
     padding: 1rem 0 2.5rem 0;
-    background: #404343;
+    background: #000000;
     min-height: 100vh;
     color: white;
     &__title {
-
+        font-family: 'Montserrat';
         text-align: center;
-        font-family: 'Leixo';
         padding-bottom: 1rem;
         letter-spacing: 7.12px;
         font-size: 40px;
@@ -516,10 +554,11 @@ img {
         display: flex;
         padding-bottom: 2rem;
         p {
-            font-size: 20px;
+            font-size: 18px;
+            font-family: 'Taviraj';
             @media (max-width: 480px) {
                 line-height: 1.6;
-                font-size: 18px;
+                font-size: 16px;
             }
         }
         @media (max-width: 720px) {
@@ -527,7 +566,7 @@ img {
             align-items: center;
         }
         &__description {
-            width: 66.66%;
+            width: 58%;
             @media (max-width: 920px) {
                 width: 100%;
             }
@@ -590,9 +629,8 @@ img {
     background-position: left center;
     background-repeat: no-repeat;
     &__title {
-
+        font-family: 'Montserrat';
         text-align: center;
-        font-family: 'Leixo';
         letter-spacing: 7.12px;
         font-size: 40px;
         opacity: 0;
@@ -623,7 +661,7 @@ img {
             img {
                 width: 45px;
                 height: 35px;
-                margin-bottom: 6px;
+                margin-bottom: 4px;
                 font-size: 27px;
                 padding-right: 15px;
             }
@@ -633,10 +671,11 @@ img {
             flex-direction: column;
             justify-content: center;
             span {
+                font-size: 18px;
+                font-family: 'Taviraj';
                 display: block;
                 margin: 8px 0;
                 font-weight: 600;
-                font-size: 22px;
             }
         }
     }
@@ -644,7 +683,7 @@ img {
 
 .ml-c-footer {
     padding: 2rem 0;
-    background: #404343;
+    background: #000000;
     &__content {
         display: flex;
         align-items: center;
@@ -663,7 +702,6 @@ img {
         img {
             position: absolute;
             left:0;
-
             @media (max-width: 560px) {
                 position: relative;
                 margin-bottom: 15px;
